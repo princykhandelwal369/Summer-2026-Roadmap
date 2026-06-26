@@ -15,6 +15,7 @@ The corner edges will always be one. So, that value should always be appended be
 
 ### Code
 
+```python
 class Solution(object):
     def generate(self, numRows):
         triangle=[[1]]
@@ -27,6 +28,7 @@ class Solution(object):
             next_row.append(1)
             triangle.append(next_row)
         return triangle
+```
 
 ### Time Complexity
 O(n²)
