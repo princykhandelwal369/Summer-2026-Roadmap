@@ -17,7 +17,7 @@ Hi, This is Princy Khandelwal, a B.Tech IT student. This repository documents my
 ## Learning Roadmap
 
 ### SQL
-- [✅] Day 1: Introduction and Basic queries(Create, Use, Insert, Delete, Select, Where, Order by)
+- [x] Day 1: Introduction and Basic queries(Create, Use, Insert, Delete, Select, Where, Order by)
 - [ ] JOINs
 - [ ] Python Connectivity
 
