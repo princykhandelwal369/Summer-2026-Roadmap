@@ -1,15 +1,6 @@
 # Day 1
 
-##Problem 1
-
-### Name
-Pascal's Triangle
-
-### Difficulty
-Easy
-
-### Topic
-Arrays
+## Problem 1- Pascal's Triangle
 
 ### LINK
 https://leetcode.com/problems/pascals-triangle/
