@@ -33,7 +33,7 @@ Hi, This is Princy Khandelwal, a B.Tech IT student. This repository documents my
 - [ ] Authentication
 
 ### DSA
-- Arrays: 8 problems
+- Arrays: 10 problems
 - Strings: 6 problems
 
 ---
