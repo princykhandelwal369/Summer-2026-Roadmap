@@ -6,11 +6,11 @@ The SQL language is universal, however: MySQL, PostgreSQL, SQL Server, Oracle, S
 MySQL, PostgreSQL, SQLite are RDBMS examples, which means it deals with rows and columns, related via keys.
 
 SQL commands are categorised into:
-- DDL (Date Definition Language): CREATE, ALTER, DROP
-- DML (Date Manipulation Language): INSERT, UPDATE, DELETE
+- DDL (Data Definition Language): CREATE, ALTER, DROP
+- DML (Data Manipulation Language): INSERT, UPDATE, DELETE
 - DQL (Data Query Language): SELECT
-- DCL (Date Control Language): GRANT, REVOKE
-- TCL (Transaction Control Language): CONTROL ROLLBACK
+- DCL (Data Control Language): GRANT, REVOKE
+- TCL (Transaction Control Language): COMMIT, ROLLBACK, SAVEPOINT
 
 # Data Types
 Different data types are used, which are as follows:
