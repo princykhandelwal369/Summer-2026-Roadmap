@@ -38,3 +38,43 @@ O(n²)
 - Building arrays from previous arrays
 - Nested loops
 - List indexing
+
+
+## Problem 2- Pascal's Triangle II
+
+### LINK
+https://leetcode.com/problems/pascals-triangle-ii/
+
+### DESCRIPTION AND UNDERSTANDING
+Instead of a growing list of all rows, just keep one variable that holds "the current row," and each iteration, replace it with the next row.
+
+---
+
+The entire trick is each loop iteration:
+- Build next_row using the current row (the old data)
+- Then overwrite row to point at next_row
+
+### Code
+
+```python
+class Solution(object):
+    def getRow(self, rowIndex):
+        row = [1]
+
+        for i in range(rowIndex):
+            next_row = [1]
+            for j in range(1, len(row)):
+                next_row.append(row[j-1] + row[j])
+            next_row.append(1)
+            row = next_row             
+
+        return row
+```
+
+### Time Complexity
+O(rowIndex²)
+
+### What I Learned
+
+- Reusing/overwriting a variable instead of storing full history (space optimization)
+- Adapting an existing solution by changing only the loop bound and return value
