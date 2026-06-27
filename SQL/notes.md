@@ -12,6 +12,8 @@ SQL commands are categorised into:
 - DCL (Data Control Language): GRANT, REVOKE
 - TCL (Transaction Control Language): COMMIT, ROLLBACK, SAVEPOINT
 
+--- 
+
 # Data Types
 Different data types are used, which are as follows:
 - INT / INTEGER          -- whole numbers
@@ -23,6 +25,8 @@ Different data types are used, which are as follows:
 - DATE                     -- 'YYYY-MM-DD'
 - DATETIME / TIMESTAMP    -- date + time
 - BOOLEAN                  -- true/false (stored as 0/1 in MySQL)
+
+---
 
 # Creating database
 A database is a container that holds your tables. Before creating tables, you create or select a database to work in.
@@ -37,6 +41,8 @@ Common constraints:
 - DEFAULT value: If no value is given during INSERT, the column automatically gets this fallback value.
 - AUTO_INCREMENT: The DBMS automatically generates the next number for this column (commonly used with PRIMARY KEY ids), so you don't have to supply it manually.
 - FOREIGN KEY: Links the column with the primary key of another table
+
+--- 
 
 # Inserting data
 INSERT adds new rows in table
@@ -53,3 +59,35 @@ It is used to filter rows and is used with SELECT, UPDATE and DELETE statements.
 
 # ORDER BY
 It sorts a column in ascending or descending order. Ascending order is default and is not compulsory to mention, while when doing descednign, desc must be mentioned. 
+
+# UPDATE
+This modifies existing rows in table. It will modify every row if not used with WHERE
+
+# DELETE
+This is used in deleting rows from table. Without the WHERE clause, the whole table will be deleted. This means all rows are deleted, but not the table structure.
+
+# ALTER TABLE
+This changes the structure of a table. It is used in adding, deleting and modifying columns. 
+
+# AGGREGATE FUNCTIONS
+These functions take many rows and collapse them into a single summary value. Functions include: 
+- Total
+- Average
+- Count
+- MIN and MAX
+
+# GROUP BY
+Group By groups rows that share the same value in a column. With the help of this, we can run aggregate functions per group instead of the whole table
+
+# HAVING
+It filters groups after aggregation. It is used exactly like WHERE clause, but only with 'Group By'
+
+# LIKE
+This does pattern matching on text. 
+% = zero or more characters, _ = exactly one character
+
+# IN
+It checks if a value matches any value in a given list 
+
+# BETWEEN 
+It checks if a value falls within a range and is inclusive on both ends.

@@ -18,6 +18,7 @@ Hi, This is Princy Khandelwal, a B.Tech IT student. This repository documents my
 
 ### SQL
 - [x] Day 1: Introduction and Basic queries(Create, Use, Insert, Delete, Select, Where, Order by)
+- [x] Day 2: UPDATE, DELETE, ALTER TABLE, Aggregate Functions (COUNT, SUM, AVG, MIN, MAX), GROUP BY, HAVING, LIKE, IN, BETWEEN, NULL values
 - [ ] JOINs
 - [ ] Python Connectivity
 
