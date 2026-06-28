@@ -91,3 +91,19 @@ It checks if a value matches any value in a given list
 
 # BETWEEN 
 It checks if a value falls within a range and is inclusive on both ends.
+
+---
+
+# Primary Key
+A primary key is a column that uniquely identifies a each row in a table. It is like a mix of unique and not null, and is used to find a particular row. Without this, you couldn't reliably update or delete a single record and could risk hitting multiple rows.
+
+employees
++----+----------+------------+
+| id | name     | department |
++----+----------+------------+
+| 1  | Asha     | Engineering|   <- id=1 uniquely identifies this row
+| 2  | Rohan    | Sales      |
+| 3  | Meera    | Engineering|
++----+----------+------------+
+   ^
+ PRIMARY KEY
