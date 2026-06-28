@@ -14,3 +14,9 @@
 - NOT IN with a NULL in the list returns zero rows unexpectedly — sanitize subqueries with NOT NULL or use NOT EXISTS instead.
 - BETWEEN with datetime upper bounds can silently exclude same-day timestamps — use < next_day pattern.
 - != / <> never matches NULL rows — must explicitly add OR col IS NULL if you want them included.
+- Don't model M:N by adding a FK directly to one of the main tables — you need a junction table.
+- INNER JOIN silently drops unmatched rows on EITHER side — use LEFT JOIN if you need to keep all of one side.
+- Deleting a parent row with FK-referencing children fails by default — decide explicitly: CASCADE, SET NULL, or block.
+- CHECK constraints can't reference other tables — that's FOREIGN KEY's job.
+
+---

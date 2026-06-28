@@ -97,13 +97,31 @@ It checks if a value falls within a range and is inclusive on both ends.
 # Primary Key
 A primary key is a column that uniquely identifies a each row in a table. It is like a mix of unique and not null, and is used to find a particular row. Without this, you couldn't reliably update or delete a single record and could risk hitting multiple rows.
 
-employees
-+----+----------+------------+
-| id | name     | department |
-+----+----------+------------+
-| 1  | Asha     | Engineering|   <- id=1 uniquely identifies this row
-| 2  | Rohan    | Sales      |
-| 3  | Meera    | Engineering|
-+----+----------+------------+
-   ^
- PRIMARY KEY
+# Foreign Key
+A foreign key is a column in one table that references the primary key of another table, creating a link between them. 
+
+For example: If there is a table named- Customers, which have two columns: Cust_ID and Cust_Name, where Cust_ID is the primary key, AND another table named- Orders, which have two columns too: Cust_ID and Amount, then, Cust_ID acts as a foreign key between both the tables and link them.
+
+---
+
+# Relationships
+It describes how rows in one table relates to rows of another table. The different kinds of relationships are:
+
+- 1:1 (One to One): One row in Table A relates to one row in Table B- For a table User and another table Profile, each User has one Profile
+- 1:M (One to Many): One row in Table A relates to many rows in Table B- For a table Department and another table Employee, one Department has many employees
+- M:N (Many to Many): Many rows in Table A relates to many rows in Table B- It requires a bridge or junction table to join. If a student table has id and their name, course table has course id and course name, then a junction table is required which has student id and course id to relate both tables.
+
+---
+
+# Inner Join
+It combines rows from two tables where there's a matching value in both (rows without a match in either table are excluded entirely). The common column is not a part of joined table.
+
+# Left Join
+LEFT JOIN (or LEFT OUTER JOIN) returns all rows from the left table, plus matching rows from the right table. If there's no match, right-table columns show NULL.
+
+# Right Join
+RIGHT JOIN is the mirror image of LEFT JOIN. It keeps all rows from the right table, with NULLs for unmatched left-table columns.
+
+---
+
+
